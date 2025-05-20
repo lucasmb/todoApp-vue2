@@ -1,0 +1,3 @@
+CLIENT_URL=https://frontendURL
+MONGODB_URI=mongodbConnectionString
+PORT=3001
