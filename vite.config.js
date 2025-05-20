@@ -20,6 +20,15 @@ export default defineConfig(({ mode }) => {
       },
     },
 
+    // --- Crucial: Add or modify the 'base' option ---
+    base: "./", // <-- Most common fix for relative path deployment
+    build: {
+      // Optional: for better browser compatibility in Vue 2 apps if needed
+      target: "es2015",
+      // Ensure the output directory is 'dist' (which is the default)
+      outDir: "dist",
+      // Other build options if you have them
+    },
     envDir: process.cwd(),
     // envPrefix: ["VITE_", "CUSTOM_PREFIX_"], // Optional: Add custom prefixes
   };

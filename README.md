@@ -1,28 +1,30 @@
-# todoVue2
+# todoApp Vue2
 This template should help get you started developing with Vue 3 in Vite.
 
-- Realtime Todo APP using vue2
-- Backend Node server using Express and SocketIo
-- Frontend uses Vuex to centralize events, socket listerners and state managament
+- Real time Todo APP using vue2
+- Backend Node server using Express and SocketIo and mongodb
+- Frontend uses Vuex to centralize events, socket listeners and state management
 - Styled with TailwindCss
-- Tasks can be assigned with Prioruty (low, medium, high)
+- Animations with AnimateJs
+- Tasks can be assigned with Priority (low, medium, high)
 - Tasks can be filtered by active or completed, and sorted by creation date or priorities
 
 
 ## Project Setup
 
-> **Recommended NODE Version** Project was built with Node LTS iron (v20.9.0 or greater)
-> this version is recommended for running it locally to import env files nativily
+> **Recommended NODE Version** Project was built with Node LTS iron
+> this version  (v20.9.0 or greater) is recommended for running it locally to import env files without external libraries
 
- - Rename `.env.example` file from root dir and backend dir to `.env` and adjust the variablaes value to your project
- - For MONGODB_URI you can use mongodb atlas URL provided in the email
 
-### Frontend
+ - Rename `.env.example` file from root dir and backend dir to `.env` and adjust the variables value to your project
+ - For MONGODB_URI you can use your own mongodb atlas URL or the one provided here
+
+#### Frontend
 ```sh
 npm install
 ```
 
-### Backend
+#### Backend
 ```sh
 cd backend
 npm install
@@ -38,7 +40,7 @@ cd backend
 npm run dev
 ```
 
-then open another termainal into the root folder and start the frontend vue APP with:
+then open another terminal into the root folder and start the frontend vue APP with:
 
 ```sh
 npm run dev
